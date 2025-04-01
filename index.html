@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunj Shah Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <meta name="description" content="Kunj Shah - Developer, Cybersecurity Specialist & AI Enthusiast" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">KS</div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <h1>Kunj Shah</h1>
+            <p class="tagline">
+                Developer | Cybersecurity Specialist | AI Enthusiast
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Kunj Shah" />
+                </div>
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Kunj Shah, a passionate developer with expertise in various programming languages and technologies. I specialize in web development, cybersecurity, and artificial intelligence.
+                    </p>
+                    <p>
+                        With a strong foundation in languages like Python, JavaScript, Go, C/C++, and Java, I enjoy solving complex problems and building innovative solutions.
+                    </p>
+                    <div class="about-buttons">
+                        <a href="files/resume.pdf" class="btn primary-btn" download>Download Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">My Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">October 2024</div>
+            <div class="timeline-content glass-card">
+              <h3>Open Source Contributor</h3>
+              <h4>Hacktoberfest 2024</h4>
+              <p>
+                Actively contributed to multiple open source projects during
+                Hacktoberfest 2024. Submitted 6+ quality pull requests, focusing
+                on improving documentation, fixing bugs, and implementing new
+                features in JavaScript and Python repositories.
+              </p>
+              <div class="exp-tags">
+                <span>Open Source</span>
+                <span>GitHub</span>
+                <span>Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">October 2024</div>
+            <div class="timeline-content glass-card">
+              <h3>Open Source AI Contributor</h3>
+              <h4>DevFest AI 2024</h4>
+              <p>
+                Contributed to open source during DevFest AI 2024, a community-driven event focused on AI innovation.
+                Developed and released an open source computer vision application that
+                helps detect and prevent security vulnerabilities in real-time. The project received recognition for 
+                technical excellence and is now maintained as a community resource on GitHub.
+              </p>
+              <div class="exp-tags">
+                <span>AI Development</span>
+                <span>Open Source</span>
+                <span>GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="ai">AI/ML</button>
+          <button class="filter-btn" data-filter="security">
+            Cybersecurity
+          </button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card" data-category="web">
+            <div class="project-info">
+              <h3>PAYMAN AI</h3>
+              <p>
+                An AI-powered payment management system built for the PAYMAN AI Challenge 
+                held in March 2025. Designed to help property owners efficiently organize rent collection
+                from tenants, providing automated reminders, payment tracking, and financial analytics
+                to streamline property management workflows.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>AI</span>
+                <span>Property Management</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/KunjShah95/PAYMAN-AI-PROJECT" target="_blank"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+                <a href="https://payman-ai-project.vercel.app/" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i> Live</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ai">
+            <div class="project-info">
+              <h3>DeepSeek R1 Implementation</h3>
+              <p>
+                A Python implementation of DeepSeek R1 from scratch, with detailed 
+                explanation of reinforcement learning techniques and training processes.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>LLM</span>
+                <span>Reinforcement Learning</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/KunjShah95/Building-DeepSeek-R1-from-Scratch-Using-Python" target="_blank"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="security">
+            <div class="project-info">
+              <h3>Network Security Scanner</h3>
+              <p>
+                A cybersecurity tool that scans networks for vulnerabilities
+                using Go.
+              </p>
+              <div class="project-tags">
+                <span>Go</span>
+                <span>Cybersecurity</span>
+                <span>Networking</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/KunjShah95/GOLANG-PROJECTS/tree/main/NETWORK%20SCANNER"
+                  target="_blank"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+          <!-- Frontend Development -->
+          <div class="skill-card">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fas fa-code"></i>
+                <h3>Frontend</h3>
+              </div>
+              <div class="skill-card-back">
+                <ul class="skill-list">
+                  <li>
+                    <span>HTML5</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 95%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>CSS3</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 90%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>JavaScript</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 85%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>React</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 80%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="skill-card">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fas fa-server"></i>
+                <h3>Backend</h3>
+              </div>
+              <div class="skill-card-back">
+                <ul class="skill-list">
+                  <li>
+                    <span>Node.js</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 70%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>Python</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 80%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>SQL</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 70%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <divn>Express</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 75%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & ML -->
+          <div class="skill-card">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
+                <i class="fas fa-brain"></i>
+                <h3>AI & ML</h3>
+              </div>
+              <div class="skill-card-back">
+                <ul class="skill-list">
+                  <li>
+                    <span>Machine Learning</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 80%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>NLP</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 75%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>TensorFlow</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 70%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>Computer Vision</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 65%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision.
+            </p>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>
+                  <a href="mailto:kunjkshah05@gmail.com"
+                    >kunjkshah05@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>9106878258</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>AHMEDABAD, GUJARAT, INDIA</p>
+              </div>
+            </div>
+            <div class="social-icons">
+              <a href="https://github.com/KunjShah95" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+                        <a href="https://linkedin.com/in/kunj-shah" target="_blank"><i class="fab fa-linkedin"></i
+              ></a>
+                        <a href="https://twitter.com/INDIA_KUNJ" target="_blank"><i class="fab fa-twitter"></i
+              ></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">
+                Send Message
+              </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/KunjShah95" target="_blank"><i class="fab fa-github"></i
+        ></a>
+            <a href="https://linkedin.com/in/kunj-shah" target="_blank"><i class="fab fa-linkedin"></i
+        ></a>
+            <a href="https://twitter.com/INDIA_KUNJ" target="_blank"><i class="fab fa-twitter"></i
+        ></a>
+            <a href="mailto:kunjkshah05@gmail.com"><i class="fas fa-envelope"></i
+        ></a>
+        </div>
+        <p>&copy; 2025 Kunj Shah. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
