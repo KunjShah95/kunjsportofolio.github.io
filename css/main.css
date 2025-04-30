@@ -780,6 +780,18 @@ h5 {
   font-size: 1.5rem;
 }
 
+/*–– style phone # and email links ––*/
+.contact-info a[href^="tel"],
+.contact-info a[href^="mailto"] {
+  color: var(--accent-color); /* or any hex / var you like */
+  transition: var(--transition-fast);
+}
+
+.contact-info a[href^="tel"]:hover,
+.contact-info a[href^="mailto"]:hover {
+  color: var(--text-light);
+}
+
 .social-links-contact {
   text-align: center;
   margin-top: 40px;
