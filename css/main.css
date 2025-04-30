@@ -783,13 +783,13 @@ h5 {
 /*–– style phone # and email links ––*/
 .contact-info a[href^="tel"],
 .contact-info a[href^="mailto"] {
-  color: var(--accent-color); /* or any hex / var you like */
+  color: var(--accent-color);        /* change link color */
   transition: var(--transition-fast);
 }
 
 .contact-info a[href^="tel"]:hover,
 .contact-info a[href^="mailto"]:hover {
-  color: var(--text-light);
+  color: var(--text-light);          /* hover color */
 }
 
 .social-links-contact {
@@ -841,6 +841,7 @@ h5 {
   border-radius: 15px;
   padding: 40px;
   box-shadow: var(--shadow-light);
+  font-size: 16px;
 }
 
 .form-group {
