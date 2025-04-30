@@ -764,20 +764,20 @@ h5 {
 }
 
 .contact-item i {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: var(--accent-color);
   margin-bottom: 20px;
 }
 
 .contact-item h3 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-bottom: 15px;
   color: var(--text-light);
 }
 
 .contact-item p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .social-links-contact {
