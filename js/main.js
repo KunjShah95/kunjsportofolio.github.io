@@ -87,27 +87,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Animate skill items on scroll
+  // Animate experience timeline and other elements on scroll
   const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.skill-card, .project-card, .timeline-item');
+    const elements = document.querySelectorAll('.timeline-item, .project-card, .skill-card');
     
-    elements.forEach(element => {
+    elements.forEach((element, index) => {
       const elementTop = element.getBoundingClientRect().top;
       const elementBottom = element.getBoundingClientRect().bottom;
       
       if (elementTop < window.innerHeight - 100 && elementBottom > 0) {
-        element.classList.add('animate-in');
-        element.classList.remove('opacity-0');
-        
-        if (element.classList.contains('timeline-item')) {
-          element.style.animationDelay = `${element.dataset.delay || 0}s`;
-        }
+        // Add delay based on element index for staggered animation
+        setTimeout(() => {
+          element.classList.add('animate-in');
+          element.style.opacity = '1';
+          element.style.transform = 'translateY(0)';
+        }, index * 100);
       }
     });
   };
   
-  // Initial animation check
-  animateOnScroll();
+  // Add initial styles for animation
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  timelineItems.forEach((item, index) => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateY(30px)';
+    item.style.transition = 'all 0.6s ease-out';
+  });
+
+  // Run animation on load and scroll
+  window.addEventListener('load', animateOnScroll);
   window.addEventListener('scroll', animateOnScroll);
 
   // Smooth scrolling for anchor links
